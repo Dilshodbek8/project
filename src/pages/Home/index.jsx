@@ -9,9 +9,12 @@ export default function Home() {
   console.log(user);
 
   return (
+    <>
     <div>
       <Showcase />
       <Spotlight />
     </div>
+   </>
+   
   );
 }
