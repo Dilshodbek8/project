@@ -1,6 +1,7 @@
 import cn from "./style.module.css";
 import Button from "./../../Button";
 import { ImgComparisonSlider } from "@img-comparison-slider/react";
+import InfoCard from "../InfoCard.jsx";
 
 export default function Spotlight() {
   return (
@@ -56,6 +57,38 @@ export default function Spotlight() {
             </ImgComparisonSlider>
           </div>
         </section>
+        <div className={cn.info}>
+          <InfoCard
+            title={"Leave the binary tree behind."}
+            desc={
+              "Build coding questions using our library of dev-friendly content that challenges them to solve the problems they’d actually tackle on the job."
+            }
+            link={"Start free trial "}
+            img={
+              "https://www.hackerrank.com/wp-content/uploads/2022/11/binarytree-1.png"
+            }
+          />
+          <InfoCard
+            title={"Leave the binary tree behind."}
+            desc={
+              "Build coding questions using our library of dev-friendly content that challenges them to solve the problems they’d actually tackle on the job."
+            }
+            link={"Start free trial "}
+            img={
+              "https://www.hackerrank.com/wp-content/uploads/2022/11/binarytree-1.png"
+            }
+          />
+          <InfoCard
+            title={"Leave the binary tree behind."}
+            desc={
+              "Build coding questions using our library of dev-friendly content that challenges them to solve the problems they’d actually tackle on the job."
+            }
+            link={"Start free trial "}
+            img={
+              "https://www.hackerrank.com/wp-content/uploads/2022/11/binarytree-1.png"
+            }
+          />
+        </div>
       </section>
     </section>
   );

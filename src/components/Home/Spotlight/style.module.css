@@ -87,6 +87,11 @@
     grid-template-columns: 1fr;
   }
 }
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 @media (max-width: 600px) {
   .locations {
     gap: 70px;
