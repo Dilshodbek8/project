@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import cn from "./style.module.css";
 import { useForm } from "react-hook-form";
 import usePost from "../../utils/queries/usePost";
+import { toast } from "react-toastify";
 export default function Registration() {
+  const nav = useNavigate();
   const {
     register,
     handleSubmit,
@@ -11,7 +13,15 @@ export default function Registration() {
   const mutation = usePost("/users");
 
   const onSubmit = (data) => {
-    mutation.mutate({...data, role:'user'});
+    mutation.mutate(
+      { ...data, role: "user" },
+      {
+        onSuccess: () => {
+          toast.success("Successfully Registered");
+          nav("/login");
+        },
+      }
+    );
   };
 
   return (

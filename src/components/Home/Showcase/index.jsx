@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../../Button";
 import cn from "./style.module.css";
 export default function Showcase() {
@@ -10,8 +11,12 @@ export default function Showcase() {
           candidates sharpen their tech skills and pursue job opportunities.
         </p>
         <div className={cn.btns}>
-          <Button text={"Sign up"} />
-          <Button variant={"white"} text={"Sign up"} />
+          <Link to={"/registration"}>
+            <Button text={"Sign up"} />
+          </Link>
+          <Link to={"/dashboard"}>
+            <Button variant={"white"} text={"Request demo"} />
+          </Link>
         </div>
         <p>
           Over 40% of developers worldwide and 3,000 companies use HackerRank

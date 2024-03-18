@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../utils/context";
+import { toast } from "react-toastify";
 export default function Registration() {
   const {
     register,
@@ -17,6 +18,7 @@ export default function Registration() {
   const { setUser } = useContext(UserContext);
   const onSubmit = (data) => {
     if (data?.name == "alex" && data?.password == "root") {
+      toast.success("Welcome Admin");
       setUser({ name: "alex", password: "root", role: "admin" });
       nav("/");
     } else {
@@ -25,6 +27,7 @@ export default function Registration() {
       );
       if (logedIn[0]) {
         setUser(logedIn[0]);
+        toast.success("Welcome");
         nav("/");
       }
     }

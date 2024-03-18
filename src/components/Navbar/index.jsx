@@ -163,8 +163,12 @@ const Navbar = () => {
         <div className={`${cn.dev_panel}`}>
           <span className={`${cn.dev}`}>For developers</span>
           <span className={`${cn.line}`}>|</span>
-          <button className={`${cn.demo}`}>Request demo</button>
-          <button className={`${cn.sign_up}`}>Sign up</button>
+          <button className={`${cn.demo}`}>
+            <Link to={"/dashboard"}>Request demo</Link>
+          </button>
+          <button className={`${cn.sign_up}`}>
+            <Link to={"/registration"}>Sign up</Link>
+          </button>
         </div>
 
         <div className={`${cn.burger_menu_container}`}>

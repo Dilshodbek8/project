@@ -1,7 +1,7 @@
 .body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 200px;
+  grid-template-columns: 1fr 1.2fr;
+  column-gap: 100px;
   align-items: center;
   padding: 80px;
 }

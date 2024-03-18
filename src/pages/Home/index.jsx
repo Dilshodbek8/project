@@ -10,11 +10,14 @@ export default function Home() {
 
   return (
     <>
-    <div>
       <Showcase />
       <Spotlight />
-    </div>
-   </>
-   
+      <div className="container">
+        <img
+          src="https://www.hackerrank.com/wp-content/uploads/2024/01/interview-2.png"
+          alt=""
+        />
+      </div>
+    </>
   );
 }

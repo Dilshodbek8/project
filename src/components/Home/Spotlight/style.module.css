@@ -92,6 +92,19 @@
   flex-direction: column;
   gap: 30px;
 }
+.interviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.interviews p {
+  width: 70%;
+  color: #576871;
+  line-height: 30px;
+  font-weight: 100;
+}
 @media (max-width: 600px) {
   .locations {
     gap: 70px;

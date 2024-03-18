@@ -69,25 +69,38 @@ export default function Spotlight() {
             }
           />
           <InfoCard
-            title={"Leave the binary tree behind."}
+            title={"Focus on what really matters: the code."}
             desc={
-              "Build coding questions using our library of dev-friendly content that challenges them to solve the problems they’d actually tackle on the job."
+              "Build skills-based coding tests with tech problems a developer would encounter on the job — and hire the team behind your next big idea."
             }
-            link={"Start free trial "}
+            link={"Request a demo  "}
             img={
-              "https://www.hackerrank.com/wp-content/uploads/2022/11/binarytree-1.png"
+              "https://www.hackerrank.com/wp-content/uploads/2022/11/code-1.png"
             }
           />
           <InfoCard
-            title={"Leave the binary tree behind."}
+            title={"Identify top contenders."}
             desc={
-              "Build coding questions using our library of dev-friendly content that challenges them to solve the problems they’d actually tackle on the job."
+              "Identify top contenders and invite them to meet your team using data-driven decisions that help level the playing field for developers everywhere."
             }
-            link={"Start free trial "}
+            link={"Learn more"}
             img={
-              "https://www.hackerrank.com/wp-content/uploads/2022/11/binarytree-1.png"
+              "https://www.hackerrank.com/wp-content/uploads/2022/09/contenders.png"
             }
           />
+        </div>
+        <div className={cn.interviews} id="interviews">
+          <p>:: Technical interviews ::</p>
+          <h2 className="title">
+            Interview like it’s <span className="green">2024</span>
+          </h2>
+          <p>
+            Ditch out of reach and out of touch interview questions about golf
+            balls and 747s — and turn off your clunky screen share for good.
+            Code, create, and collaborate with an IDE built to showcase
+            real-world skills in a real-world environment.
+          </p>
+          <Button text={"Learn more"} />
         </div>
       </section>
     </section>

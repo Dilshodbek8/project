@@ -1,47 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 :root {
-    --gray: #637681;
-    --bg: #FEF9F2;
-    --green: #068932;
-
+  --gray: #637681;
+  --bg: #fef9f2;
+  --green: #068932;
 }
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family:'Open Sans';
-    overflow-x: hidden;
-    text-decoration: none;
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+button {
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Open Sans";
+  overflow-x: hidden;
+  text-decoration: none;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1450px;
-    padding: 0 40px;
+  margin: 0 auto;
+  max-width: 1450px;
+  padding: 0 40px;
 }
 
 @media screen and (max-width: 1024px) {
-    .container {
-        padding: 30px 3%;
-    }
+  .container {
+    padding: 30px 3%;
   }
-  
-  
-  
-  @media screen and (max-width: 465px) {
-    .container {
-        padding: 20px 2%;
-    }
+}
+
+@media screen and (max-width: 465px) {
+  .container {
+    padding: 20px 2%;
   }
-  
- 
-  
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    color: #fff;
-    font-size: 15px;
-  }
-  
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #fff;
+  font-size: 15px;
+}
+
 * {
   padding: 0;
   margin: 0;
