@@ -42,3 +42,33 @@
     font-size: 15px;
   }
   
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 56px;
+}
+.green {
+  color: #068932;
+}
+
+.slider-example-focus:focus {
+  outline: none;
+}
