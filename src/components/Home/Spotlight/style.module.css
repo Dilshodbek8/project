@@ -78,7 +78,7 @@
   gap: 30px;
   margin: 40px 0;
   flex-direction: column;
-  h2{
+  h2 {
     font-size: 52px;
   }
 }
@@ -88,6 +88,9 @@
   }
 }
 @media (max-width: 600px) {
+  .locations {
+    gap: 70px;
+  }
   .body h2 {
     font-size: 30px;
   }
