@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
-import logo from "../Navbar/images/logo.png";
-import { Link } from "react-router-dom";
+import logo from "./images/logo.png";
 import cn from "./navbar.module.css";
-import data from "../Navbar/data.jsx";
+import { Link } from "react-router-dom";
 import { FaArrowRight, FaGreaterThan, FaXmark } from "react-icons/fa6";
+import data from "./data.js";
+import { useContext } from "react";
+import { UserContext } from "../../utils/context";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { user } = useContext(UserContext);
+  console.log(user, "ee");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -164,10 +169,19 @@ const Navbar = () => {
           <span className={`${cn.dev}`}>For developers</span>
           <span className={`${cn.line}`}>|</span>
           <button className={`${cn.demo}`}>
-            <Link to={"/dashboard"}>Request demo</Link>
+            {user?.role == "admin" ? (
+              <Link to={"/dashboard"}>Users</Link>
+            ) : (
+              <Link to={"/dashboard"}>Request demo</Link>
+            )}
           </button>
+
           <button className={`${cn.sign_up}`}>
-            <Link to={"/registration"}>Sign up</Link>
+            {user?.role == "admin" ? (
+              <Link to={"/dashboard"}>Dashboard</Link>
+            ) : (
+              <Link to={"/registration"}>Sign up</Link>
+            )}
           </button>
         </div>
 

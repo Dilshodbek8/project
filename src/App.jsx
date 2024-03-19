@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
@@ -21,6 +21,8 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/404" element={<h1>404</h1>} />
+        <Route path="*" element={<Navigate to="/404" />} />
       </Routes>
     </Layout>
   );
